@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class mergesort {
 	public ArrayList<Integer> merge(int arr1[],int arr2[]){
-		int i=0,j=0,k=0;
+		int i=0,j=0;
 		ArrayList<Integer> al=new ArrayList<Integer>();
 		
 		
@@ -16,17 +16,17 @@ public class mergesort {
 	             al.add(arr2[j]);
 	             j++;
 	         }
-	         k++;
+	         
 	    }
 		 while (i < arr1.length) {  
 	         al.add( arr1[i]);  
 	         i++;  
-	         k++;
+	         
 		 }
 		 while (j < arr2.length) {  
 	         al.add(arr2[j]);  
 	         j++;  
-	         k++;  
+	         
 		 }
 		return al;
 		
